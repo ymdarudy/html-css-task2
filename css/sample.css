@@ -1,0 +1,116 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.main-header {
+  padding-top: 43px;
+  padding-bottom: 15%;
+  width: 100%;
+  background-size: cover;
+  background-image: url("../images/header.jpg");
+  background-attachment: fixed;
+  position: relative;
+  /*  padding-topは特に指定がないので、テキストを見つつアテで設定 */
+}
+
+/* ここから */
+header {
+  background-color: #2B2B2B;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+}
+
+header ul a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 17px; 
+}
+
+header li {
+  list-style: none;
+  float: left;
+}
+
+header ul:after {
+  content: "";
+  display: block;
+  clear: right;
+}
+
+header .upper-right {
+  float: right;
+}
+
+/* ここまでがheader部分の実装 */
+
+.main-header img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 13%;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.about {
+  padding: 16px 0;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+/* ここから */
+.function {
+  background-color: #D3D3D3;
+  padding-top: 16px;
+}
+
+.function-images {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.function-image {
+  padding: 21px;
+}
+
+.function-image img {
+  width: 68%;
+}
+/* 余白とimgの幅はテキストを見つつアテで設定 */
+/* ここまでがfunction部分の実装 */
+
+footer {
+  height: 70px;
+  width: 100%;
+  background-color: #283A4B;
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+footer p {
+  color: white;
+  margin: 0 auto;
+}
